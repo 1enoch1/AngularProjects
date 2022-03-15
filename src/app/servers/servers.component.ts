@@ -13,6 +13,8 @@ export class ServersComponent implements OnInit {
   serverCreated = false;
   displayDetails = false;
   servers = ['Test Server', 'Test Server 2'];
+  logs = [];
+
   
   constructor() {
     setTimeout(() => {
@@ -31,6 +33,7 @@ export class ServersComponent implements OnInit {
 
   onDisplayDetails(){
     this.displayDetails = !this.displayDetails;
+    this.logs.push(new Date());
   }
 
 
