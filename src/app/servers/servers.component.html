@@ -1,0 +1,7 @@
+
+<!-- <label>Server Name</label>
+<input type="text" class="form-control" [(ngModel)]="password"> -->
+<br/>
+<button class="btn btn-primary" [disabled]="password === ''" (click)="onDisplayDetails()">Display Details</button>
+<p *ngIf="displayDetails">Secret password is {{ password }}</p>
+<!-- <app-server *ngFor="let server of servers"></app-server> -->
