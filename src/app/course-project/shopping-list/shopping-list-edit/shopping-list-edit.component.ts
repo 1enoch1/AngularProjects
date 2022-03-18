@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ingredient } from '../../shared/ingredient.model';
 
 @Component({
   selector: 'app-shopping-list-edit',
@@ -11,5 +12,14 @@ export class ShoppingListEditComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  onAddIngredient(ingredient: Ingredient){
+
+  }
+
+  onDeleteIngredient(ingredient: Ingredient){
+
+  }
+
 
 }
